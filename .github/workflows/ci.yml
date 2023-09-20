@@ -28,7 +28,7 @@ jobs:
           POSTGRES_DB: simple_bank
         # Set health checks to wait until postgres has started
         options: >-
-          --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5 #magic___^_^___line #magic___^_^___line
+          --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
         ports:
         - 5439:5432 # Map host port 5432 to container port 5432
     steps:
